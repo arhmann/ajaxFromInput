@@ -1,0 +1,16 @@
+.form__wrapper {
+    display: flex;
+    margin: 0 0 10px;
+  }
+  
+  #form__username, #form__card {
+    margin-right: 8px;
+  }
+  input:valid {
+    border-color: green;
+  }
+  
+  input:invalid {
+    border-color: red;
+  }
+  
