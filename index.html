@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Input Validator</title>
 </head>
+
 <body>
-<!-- enctype="multipart/form-data" -->
+    <!-- enctype="multipart/form-data" -->
 
-    <form action="login.php" enctype="multipart/form-data" id="form" class="form" method="POST">
-        <div class="form__wrapper">  
+    <form id="form" class="form">
+        <div class="form__wrapper">
 
-        <input type="text" name="username" id="form__username" placeholder="Введите ваше имя" required >
-        <input type="tell" name="usertell" id="form__card" placeholder="Введите вашу карту" required >
-         <input type="password" name="userpass" id="form__pass" placeholder="CVT">
+            <input type="text" name="username" id="form__username" placeholder="Введите ваше имя" required>
+            <input type="tel" name="usertel" id="form__card" placeholder="Введите вашу карту" required>
+            <input type="password" name="userpass" id="form__pass" placeholder="CVT">
 
         </div>
 
-       <button type="submit" class="form__btn">Pay</button>
+        <button type="button" id="form__btn">Pay</button>
     </form>
 
     <script src="./just-validate.min.js"></script>
     <script src="./app.js"></script>
 </body>
+
 </html>

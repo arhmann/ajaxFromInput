@@ -1,8 +1,8 @@
-const form = document.getElementById("form");
+/*const form = document.getElementById("form");
 let btn = document.getElementById("form__btn");
 let xhr = new XMLHttpRequest();
 
-form.addEventListener('submit', function (e) {
+btn.addEventListener('click', function (e) {
     e.preventDefault();
     xhr.open('POST', 'https://reqres.in/api/products/3', true)
     xhr.send(new FormData(form));
@@ -15,26 +15,23 @@ form.addEventListener('submit', function (e) {
             }
         }
     }
-    
+
    form.reset();
 });
+*/
 
 
 
-
-
-/*
 const form = document.getElementById("form");
 let btn = document.getElementById("form__btn");
 let xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
 
-form.addEventListener('submit', function (e) {
+btn.addEventListener('click', function (e) {
     e.preventDefault();
-    const formData = new FormData(this);
-   
+    let formData = new FormData(form);
 
-    fetch('/article/formdata/post/user', {
+    fetch('https://reqres.in/api/products/3', {
         method: 'post',
         body: formData
     }).then(function(response) {
@@ -45,4 +42,4 @@ form.addEventListener('submit', function (e) {
         console.error(error);
     })
 });
-*/
+
